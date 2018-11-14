@@ -33,5 +33,11 @@ public:
 	void set_scoreRecord(int t_scoreRecord){
 		scoreRecord = t_scoreRecord;
 	}
+	void cut_score(){
+		scoreRecord -= 2;
+	}
+	void add_score(){
+		score += 2;
+	}
 }
 

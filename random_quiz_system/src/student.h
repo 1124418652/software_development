@@ -6,38 +6,39 @@
     > Created Time: Wed 14 Nov 2018 10:41:11 PM CST
 *****************************************************/
 #include <string>
+#include <iostream>
 
 class Student{
 private:
-	string id;              // student id
-	string name; 
-	int scoreRecord;     // the score gained by answering question
+	std::string id;              // student id
+	std::string name; 
+	std::string scoreRecord;     // the score gained by answering question
 public:
-	Student(string t_id, string t_name, int t_scoreRecord):\
+	Student(std::string t_id, std::string t_name, std::string t_scoreRecord):\
 		id(t_id), name(t_name), scoreRecord(t_scoreRecord){}
-	string get_id(){
+	std::string get_id(){
 		return id;
 	}
-	void set_id(string t_id){
+	void set_id(std::string t_id){
 		id = t_id; 
 	}
-	string get_name(){
+	std::string get_name(){
 		return name;
 	}
-	void set_name(string t_name){
+	void set_name(std::string t_name){
 		name = t_name;
 	}
-	int get_scoreRecord(){
+	std::string get_scoreRecord(){
 		return scoreRecord;
 	}
-	void set_scoreRecord(int t_scoreRecord){
+	void set_scoreRecord(std::string t_scoreRecord){
 		scoreRecord = t_scoreRecord;
 	}
 	void cut_score(){
-		scoreRecord -= 2;
+		scoreRecord = scoreRecord + "-2";
 	}
 	void add_score(){
-		score += 2;
+		scoreRecord += "+2";
 	}
-}
+};
 

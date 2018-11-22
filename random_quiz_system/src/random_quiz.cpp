@@ -6,18 +6,24 @@
 *****************************************************/
 
 #include <iostream>
+#include <time.h>
+//#include <conio>
 #include "fileOperation.h"
+#include "student.h"
+#include "question.h"
 
 using namespace std;
 
 int main(int argc, char **argv)
 {
-	studentList student, student1;
-	student.push_back(Student("12", "xj", "+2"));
-	writeStudentFile("student.txt", student);
-	student1 = readStudentFile("student.txt");
-	for (int i = 0; i < student1.size(); ++i){
-		std::cout<<student[i].get_id()<<std::endl;
-	}
+	srand(time(NULL));
+	int flag;
+	system("clear");
+	cout << "---------------------------------------------" << endl;
+	cout << "random quiz system" << endl << endl;
+	cout << "press Enter to begin and press Esc to exit" << endl;
+	cout << "---------------------------------------------" << endl;
+	char a = getchar();
+	cout<< a<<endl;
 	return 0;
 }

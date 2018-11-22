@@ -5,8 +5,11 @@
     > Mail: 1124418652@qq.com 
     > Created Time: Wed 14 Nov 2018 10:41:11 PM CST
 *****************************************************/
+#ifndef __Student__Class
+#define __Student__Class 
 #include <string>
 #include <iostream>
+
 
 class Student{
 private:
@@ -42,3 +45,4 @@ public:
 	}
 };
 
+#endif

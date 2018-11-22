@@ -4,6 +4,8 @@
     > Mail: 1124418652@qq.com 
     > Created Time: Wed 14 Nov 2018 11:56:55 PM CST
 *****************************************************/
+#ifndef __Question_Class
+#define __Question_Class 
 
 #include <string>
 #include <iostream>
@@ -45,3 +47,5 @@ public:
 		id = t_id;
 	}
 };
+
+#endif
